@@ -1,0 +1,14 @@
+<nb-card>
+  <nb-card-header class="text-center">
+    <nb-icon icon="alert-circle-outline" status="primary"></nb-icon>
+    <br>
+    <br>
+    {{mensaje}}
+    <br>
+  </nb-card-header>
+  <nb-card-footer class="text-center">
+    <button nbButton status="" class="boton-color-fondo texto-color appearance-filled size-medium status-primary shape-rectangle transitions" (click)="submit()">{{textoAfirmacion}}</button>
+    <button nbButton status="" *ngIf="!onlyMeesage" class="boton-color-fondo-no texto-color appearance-filled size-medium status-primary shape-rectangle transitions" (click)="cancel()">{{textoNegacion}}</button>
+
+  </nb-card-footer>
+</nb-card>

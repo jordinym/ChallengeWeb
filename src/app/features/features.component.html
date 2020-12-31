@@ -1,0 +1,19 @@
+<nb-layout windowMode>
+  <nb-layout-header fixed >
+    <ngx-header></ngx-header>
+  </nb-layout-header>
+  <!-- <nb-layout-header style="background-color: white; height: 3.75rem!important; box-shadow:none!important" class=" border m-0 p-0" subheader>
+    <ngx-breadcrumb class=" border m-0 p-0"></ngx-breadcrumb>
+  </nb-layout-header> -->
+  <!-- pr-1 pt-1 m-0 ml-0 mr-0 -->
+  <nb-layout-column class="p-0 mt-0 mw-100" style="background-color: white">
+    <div style="border: 1px solid #d9d8d8;" class=" col-md-12 col-sm-12 p-0 pt-0 mt-0 pb-0 m-0 mb-0">
+      <ngx-breadcrumb ></ngx-breadcrumb>
+    </div>
+    <div class="pr-2 pl-2 pt-1 pb-1">
+      <ng-content class="mw-100 mt-0 pr-1 pt-0" select="router-outlet">
+      </ng-content>
+      <router-outlet  class="pt-0"></router-outlet>
+    </div>
+  </nb-layout-column>
+</nb-layout>

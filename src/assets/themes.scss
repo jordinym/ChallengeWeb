@@ -1,0 +1,115 @@
+// @nebular theming framework
+@import '~@nebular/theme/styles/theming';
+// @nebular out of the box themes
+@import '~@nebular/theme/styles/themes';
+
+$tamanio_scroll_width: 0.6rem;
+$tamanio_scroll_color: #a1cbf5e3;
+$nb-themes: nb-register-theme((
+
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: #f7f9fc,
+  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+
+  //Estilo para los botones
+  color-app-fondo:#F2BC12,
+  color-app-fondo-hover: rgb(245, 204, 68),
+  color-app-fondo-focus: rgb(231, 182, 19),
+  color-app-texto:black,
+  color-app-border-color:#fbbd00,
+  color-border-radius: 0.9rem,
+
+
+  header-background-color:#F2BC12, // fondo del header
+  header-text-color:black, // texto del header
+  menu-background-color:#F2BC12,
+  menu-text-color:black,
+
+  user-name-text-color:black,
+  user-title-text-color:black,
+
+  tamanio_letra: 0.7rem,
+  tamanio_letra_subtitulo: 0.8rem,
+
+  card-scrollbar-color: $tamanio_scroll_color,
+  layout-scrollbar-color: $tamanio_scroll_color,
+  card-scrollbar-width: $tamanio_scroll_width,
+  layout-scrollbar-width: $tamanio_scroll_width
+  // card-header-default-background-color:$base-color-ferreycorp,
+  // * header-text-color:
+  // * header-text-font-family:
+  // * header-text-font-size:
+  // * header-text-font-weight:
+  // * header-text-line-height:
+  // * header-height:
+  // * header-padding:
+  // * header-shadow:
+
+
+), default, default);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+  color-app-fondo:#F2BC12,
+  color-app-fondo-hover: rgb(245, 204, 68),
+  color-app-fondo-focus: rgb(231, 182, 19),
+  color-app-texto:black,
+  color-app-border-color:#fbbd00,
+  color-border-radius: 0.9rem,
+  tamanio_letra: 0.7rem,
+  tamanio_letra_subtitulo: 0.8rem,
+  card-scrollbar-color: $tamanio_scroll_color,
+  layout-scrollbar-color: $tamanio_scroll_color,
+  card-scrollbar-width: $tamanio_scroll_width,
+  layout-scrollbar-width: $tamanio_scroll_width
+), dark, dark);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+  color-app-fondo:#F2BC12,
+  color-app-fondo-hover: rgb(245, 204, 68),
+  color-app-fondo-focus: rgb(231, 182, 19),
+  color-app-texto:black,
+  color-app-border-color:#fbbd00,
+  color-border-radius: 0.9rem,
+  tamanio_letra: 0.7rem,
+  tamanio_letra_subtitulo: 0.8rem,
+  card-scrollbar-color: $tamanio_scroll_color,
+  layout-scrollbar-color: $tamanio_scroll_color,
+  card-scrollbar-width: $tamanio_scroll_width,
+  layout-scrollbar-width: $tamanio_scroll_width
+), cosmic, cosmic);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+  color-app-fondo:#F2BC12,
+  color-app-fondo-hover: rgb(245, 204, 68),
+  color-app-fondo-focus: rgb(231, 182, 19),
+  color-app-texto:black,
+  color-app-border-color:#fbbd00,
+  color-border-radius: 0.9rem,
+  tamanio_letra: 0.7rem,
+  tamanio_letra_subtitulo: 0.8rem,
+  card-scrollbar-color: $tamanio_scroll_color,
+  layout-scrollbar-color: $tamanio_scroll_color,
+  card-scrollbar-width: $tamanio_scroll_width,
+  layout-scrollbar-width: $tamanio_scroll_width
+), corporate, corporate);
+
+
+

@@ -1,0 +1,21 @@
+<nb-card>
+    <nb-card-header class="boton-color-fondo border">Seleccione un rango de fechas para la búsqueda</nb-card-header>
+    <nb-card-body>
+      <div class="form-group custom-form-group row">
+        <label class="label col-4 col-sm-4 col-md-4 col-lg-4 col-form-label">Fecha Inicio:</label>
+        <input nbInput class="col-6 col-sm-6 col-md-6 col-lg-6 form-control size-small custom-input custom-wo" placeholder="Seleccionar fecha" [nbDatepicker]="formpicker1" [(ngModel)]="fechaInicio" shape="round"
+        size="small" readonly>
+        <nb-datepicker #formpicker1></nb-datepicker>
+      </div>
+      <div class="form-group custom-form-group row">
+        <label class="col-4 col-sm-4 col-md-4 col-lg-4 label col-form-label">Fecha Fin:</label>
+        <input nbInput class="col-6 col-sm-6 col-md-6 col-lg-6 form-control size-small custom-input custom-wo" placeholder="Seleccionar fecha" [nbDatepicker]="formpicker2" [(ngModel)]="fechaFin" shape="round"
+        size="small" readonly>
+        <nb-datepicker #formpicker2 [min]="fechaInicio"></nb-datepicker>
+      </div>
+    </nb-card-body>
+    <nb-card-footer class="text-center">
+      <button nbButton status="" class="boton-color-fondo texto-color appearance-filled size-medium status-primary shape-rectangle transitions" (click)="submit()">Buscar</button>
+      <button nbButton status="" class="ml-3 boton-color-fondo-no texto-color appearance-filled size-medium status-primary shape-rectangle transitions" (click)="close()">Cancelar</button>
+    </nb-card-footer>
+  </nb-card>

@@ -1,0 +1,57 @@
+
+  <div class="container">
+    <div class="form-group">
+        <div class="row customCardContent">
+          <div class="col-md-5 col-sm-12">
+            <div class="customCardLogin">
+              <div class="card">
+                <div class="card-body customCardBodyLogin">
+                  <div class="justify-content-center row">
+                    <img alt="Profile" width="200" height="160"
+                    src="./assets/images/profile.png">
+                  </div>
+                  <br>
+                  <div class="row">
+
+                    <br />
+                  </div>
+                  <form (ngSubmit)="form.valid && login()" #form="ngForm" aria-labelledby="title" novalidate>
+                    <div class="input-group mb-3"  >
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user custom-awesome"></i></span>
+                      </div>
+                      <input maxlength="80" nbInput  [(ngModel)]="user.username" class="form-control" #username="ngModel" name="username" id="input-email"
+                      placeholder="Usuario" autofocus required>
+                    </div>
+
+                    <div class="input-group mb-3" >
+                      <show-hide-password [btnOutline]="false"  >
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-envelope custom-awesome"></i></span>
+                      </div>
+
+                        <input maxlength="100" nbInput  [(ngModel)]="user.password" class="form-control" #password="ngModel" name="password" type="password"
+                          id="input-password" placeholder="Contraseña" required>
+                      </show-hide-password>
+                    </div>
+
+                    <div class="form-control-group">
+                    <nb-alert *ngIf="error" fullWidth status="danger">{{error}}</nb-alert>
+                    <nb-alert *ngIf="warning" status="warning">{{warning}}</nb-alert>
+                  </div>
+                    <div class="form-control-group btn-custom customSummit">
+                      <button nbButton fullWidth status="success" [disabled]="!form.valid || (form.valid && loadingSociedad)"
+                        [class.btn-pulse]="submitted">
+                        <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                        INGRESAR
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+

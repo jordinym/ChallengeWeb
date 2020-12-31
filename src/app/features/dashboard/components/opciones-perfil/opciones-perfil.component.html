@@ -1,0 +1,21 @@
+
+<nb-card class="border border-dark">
+  <!-- <nb-card-header> <h6><strong>Seleccionar el tipo de Caso a Solicitar:</strong></h6></nb-card-header> -->
+  <nb-card-body>
+
+    <div class="text-center profile-title"><strong>Seleccionar el tipo de Gestión:</strong></div>
+    <p></p>
+    <!-- <ul class="list-group list-group-flush" *ngFor="let item of menuListado">
+      <li class="list-group-item border-0"> <a href='#' >{{item}}</a></li>
+    </ul> -->
+    <table class='table borderless pt-2'>
+      <tr *ngFor="let item of menuListado">
+        <td class="align-middle">
+          <!-- <i class="fas fa-2x fa-caret-square-right"></i> -->
+          <img src="assets/images/square.JPG" width="30px" alt="Archivo PDF" >
+        </td>
+      <td class="align-middle pl-0"><a routerLink='./{{item.Url}}'><u>{{item.Titulo | titlecase }}</u></a></td></tr>
+    </table>
+
+  </nb-card-body>
+</nb-card>

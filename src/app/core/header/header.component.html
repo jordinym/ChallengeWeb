@@ -1,0 +1,33 @@
+<div class="row pt-2">
+  <div class="col-lg-3 col-md-3 col-sm-12">
+    <ul class="m-0 p-0 list-unstyled">
+      <li class="control-item">
+        <a ng-reflect-router-link="/dashboard"
+          href="#/dashboard">
+          <img src="assets/images/{{appLogo}}"
+            width="auto"
+            height="40"
+            alt="Soporte Tenico">
+        </a>
+      </li>
+      <li class="pt-1 pb-0">
+        <span class="title-header"><strong>CHALLENGE INTERCORP RETAIL</strong></span>
+      </li>
+    </ul>
+  </div>
+  <div class="col-lg-5 col-md-5 col-sm-9 col-10 my-auto">
+
+  </div>
+
+  <div class="col-lg-4 col-md-4 w-80 col-sm-3 mt-xl-2 control-item-align-right">
+
+    <nb-user class="w-80 control-item control-item-align-left"
+      [nbContextMenu]="userMenu"
+      [picture]="'assets/images/user2.png'"
+      [name]="user?.apellidoPaterno + ' ' + user?.apellidoMaterno + ', ' + user?.nombre"
+      [title]="user?.perfilDescripcion"
+      [size]="'medium'"></nb-user>
+  </div>
+
+</div>
+

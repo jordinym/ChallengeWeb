@@ -1,0 +1,57 @@
+@import '../../../../assets/themes.scss';
+@import '../../../features/features.component.scss';
+
+.border{
+  border-radius:0!important
+}
+
+@include nb-install-component() {
+  .boton-color-fondo {
+    background-color: nb-theme(color-app-fondo); 
+    min-width: 100px;
+  }
+  .boton-color-fondo-no {
+    background-color: #dcdcdc !important;
+    min-width: 100px;
+    
+  }
+  .boton-color-fondo, 
+  .boton-color-fondo-no,
+  .boton-color-fondo-no:hover,
+  .boton-color-fondo-no:focus,
+  .boton-color-fondo:hover,
+  .boton-color-fondo:focus { 
+    border-color: transparent;
+    border-radius: 0.7rem;
+  }
+  .boton-color-fondo:hover {
+    background-color: nb-theme(color-app-fondo-hover); 
+  }
+  .boton-color-fondo:focus {
+    background-color: nb-theme(color-app-fondo-focus); 
+  }
+  .texto-color {
+    color: nb-theme(color-app-texto);
+  }
+  .label{
+    font-weight: normal !important;
+    color: #192038 ;
+    font-size: 0.80rem !important;
+    border: 0px;
+    border-radius: 0px;
+    margin-right: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  input {
+    padding: 0rem 1.125rem !important;
+    height: 2.3em !important;
+    border-radius: 20px !important;
+  }
+  
+  .custom-input {
+    color: #0424f6 !important;
+  }
+  
+}

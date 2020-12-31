@@ -1,0 +1,86 @@
+@import "../../../../assets/themes.scss";
+@import "~@nebular/theme/styles/global/breakpoints";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+
+
+@include nb-install-component() {
+  ::ng-deep {
+
+    button + button {
+      margin-left: 3rem;
+    }
+
+    .dialog-card {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+
+    .btn-yes {
+      //border-radius: 0.25rem !important;
+      min-width: 100px;
+      min-height: 30px;
+    }
+    .btn {
+      box-shadow: none !important;
+    }
+
+    .btn-no {
+      background-color: #dcdcdc !important;
+      border-color: #dcdcdc !important;
+      color: #000000 !important;
+      margin-left: 30px;
+      min-width: 100px;
+      min-height: 30px;
+      border-color: transparent !important;
+      border-radius: 0.7rem;
+    }
+
+    @media (min-width: 40rem) {
+      .dialog-card {
+        width: 38rem;
+      }
+    }
+  }
+
+  nb-card{
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 560px;
+  }
+  nb-card-header {
+    font-weight: normal !important;
+  }
+  nb-icon {
+    font-size: 4.2rem !important;
+  }
+
+  .boton-color-fondo {
+    background-color: nb-theme(color-app-fondo);
+    min-width: 100px;
+  }
+  .boton-color-fondo-no {
+    background-color: #dcdcdc !important;
+    min-width: 100px;
+
+  }
+  .boton-color-fondo,
+  .boton-color-fondo-no,
+  .boton-color-fondo-no:hover,
+  .boton-color-fondo-no:focus,
+  .boton-color-fondo:hover,
+  .boton-color-fondo:focus {
+    border-color: transparent;
+    border-radius: 0.7rem;
+  }
+  .boton-color-fondo:hover {
+    background-color: nb-theme(color-app-fondo-hover);
+  }
+  .boton-color-fondo:focus {
+    background-color: nb-theme(color-app-fondo-focus);
+  }
+  .texto-color {
+    color: nb-theme(color-app-texto);
+  }
+}

@@ -1,0 +1,121 @@
+:host ::ng-deep ngx-base-auth .customCardContent {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+:host ::ng-deep ngx-base-auth .customCardLogin {
+  margin: 20px 10px;
+  float: right !important;
+  min-width: 350px;
+  max-width: 350px;
+}
+
+ :host ::ng-deep ngx-base-auth .customCardBodyLogin {
+   padding: 60px 30px 50px !important;
+ }
+
+:host ::ng-deep ngx-base-auth .container {
+  margin-right: 20px !important;
+  margin-top: 20px !important;
+}
+
+:host ::ng-deep ngx-base-auth .card {
+  border: none !important;
+  border-radius: 0em !important;
+  background-color: #eac23e  !important;
+}
+
+:host ::ng-deep ngx-base-auth .customSummit{
+   text-align: center;
+}
+
+
+:host ::ng-deep ngx-base-auth .customSociedades{
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  padding: 0.4375rem 1.125rem;
+  color: #8f9ab3 !important;
+}
+
+.customBackgroundLogin {
+  background-color: black;
+  background-image: url(../../../../../assets/images/background_image.jpg);
+  //background-repeat: repeat-x;
+  width: 100%; height: 100%;
+  background-position: center;
+  //background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute; top: 0; left: 0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eac23e ;
+  color: white !important;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 40px;
+  max-height: 40px;
+  z-index: 2000;
+}
+
+.footer p {
+  font-weight: bold !important;
+  font-size: 12px !important;
+  //color: rgb(212, 212, 212) !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .footer p {
+        font-weight: bold !important;
+        font-size: 10px !important;
+      }
+    @media only screen  and (orientation:portrait) {
+    :host ::ng-deep ngx-base-auth .customCardContent {
+        margin-top: 40%;
+      }
+      :host ::ng-deep ngx-base-auth .customCardLogin {
+        margin: 0px 0px;
+      }
+
+      // :host ::ng-deep ngx-base-auth .customCardBodyLogin {
+      //   padding-right: 40px !important;
+      // }
+
+      :host ::ng-deep ngx-base-auth .container {
+        margin-right: 20px !important;
+        margin-top: 0px !important;
+      }
+      :host ::ng-deep ngx-base-auth .loginTitle {
+        font-size: 20px;
+      }
+    }
+    @media only screen  and (orientation:landscape) {
+        :host ::ng-deep ngx-base-auth .customCardContent {
+            margin-top: 4%;
+                max-width: 400px;
+                max-height: 400px;
+          }
+        :host ::ng-deep ngx-base-auth .customCardContent {
+            margin-top: 0%;
+          }
+          :host ::ng-deep ngx-base-auth .customCardLogin {
+            margin: 0px 0px;
+          }
+
+          // :host ::ng-deep ngx-base-auth .customCardBodyLogin {
+          //   padding-right: 40px !important;
+          // }
+
+          :host ::ng-deep ngx-base-auth .container {
+            margin-right: 0px !important;
+            margin-top: 0px !important;
+          }
+        }
+  }

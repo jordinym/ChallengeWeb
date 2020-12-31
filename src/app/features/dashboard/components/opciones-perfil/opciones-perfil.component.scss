@@ -1,0 +1,55 @@
+@import '../../../../../assets/themes.scss';
+@import '~@nebular/theme/styles/global/breakpoints';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+@include nb-install-component() {
+  nb-card { 
+    border-radius:0em !important;
+    border-color: #d9d8d8!important;
+    padding: 1rem;
+    
+    height: 460px!important; 
+  }
+
+  // ipad
+  @media only screen and (min-width: 1024px) {
+    nb-card {
+      height: 600px!important;
+    }
+  }
+  //laptop
+  @media only screen and (min-width: 1200px) {
+    nb-card {
+      height: 460px!important;
+    }
+  }
+  //destkop
+  @media only screen and (min-width: 1600px) {
+    nb-card {
+      height: 580px!important;
+    }
+  }
+  
+  .profile-title{
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  nb-card-header {
+    // background-color: nb_theme(menu-background-color);
+
+    h6 {
+      // color: nb_theme(color-app-texto);
+    }
+  }
+
+  nb-card-body {
+    margin: 0;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .table th, .table td {
+    border-top: none!important;
+  }
+
+}
